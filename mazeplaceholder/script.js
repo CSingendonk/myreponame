@@ -1,3 +1,6 @@
+// Make instructions more visible and the true function of the back checkbox and it's roll in the strategy.
+// fix the respawn location when maze regenerates larger. or fix the multi end cell / startcell stack bug.
+
 // Define the maze generation function
 var rowsIn = document.getElementById("heightIn");
 // Number of rows
@@ -145,6 +148,8 @@ let currentY = 1; // Current Y position of the green cell
 
 // Display the maze on the grid and set up event listener for arrow key presses
 window.onload = function () {
+	var attninfo = document.getElementById("infoDivButton");
+	// TODO animate infodivbutton to draw attention or require interaction of the user before allowing start of maze traversal
 	const grid = document.getElementById("grid");
 	for (let i = 0; i < rows; i++) {
 		for (let j = 0; j < columns; j++) {
