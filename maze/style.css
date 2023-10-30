@@ -1,0 +1,32 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(25, 100vw/25);
+	grid-template-rows: repeat(25, 100vh/25);
+	gap: 0px;
+}
+
+.grid-item {
+	width: auto;
+	height: auto;
+	border: 1px blink #119955; /* Border color, optional */
+}
+
+.start-cell {
+	background-color: #2ecc71; /* Green color for the start cell */
+}
+
+.end-cell {
+	background-color: #f39c12; /* Orange color for the end cell */
+}
+
+.wall {
+	background-color: #e74c3c; /* Red color for walls */
+}
+
+.maze-path {
+	background-color: #3498db; /* Blue color for maze path cells */
+}
+
+.pale-green {
+	background-color: #2eff71; /* Green color for the start cell */
+}

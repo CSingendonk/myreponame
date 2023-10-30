@@ -1,0 +1,92 @@
+body>header>h1 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: small;
+    text-align: center;
+    background-color: rgba(185, 139, 12, 0.75);
+    padding: 1vmin;
+    margin: 0;
+}
+
+body{
+    background-image: url(bricks.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body>header>nav {
+    background-color: rgba(154, 115, 10, 0.75);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: inset;
+    box-sizing: border-box;
+}
+
+body>header>nav ul li {
+    display: inline;
+}
+
+body>header>nav ul li a {
+    text-decoration: 1 wavy white 20px;
+    color: rgb(0, 0, 0);
+    padding: 1vmin 1vmin;
+    margin-inline: 5vw;
+}
+
+body>header>nav ul li a:hover {
+    color: cyan;
+    font-size: large;
+}
+
+.togglec:checked {
+    z-index: 99;
+    visibility: hidden;
+    display: none;
+}
+
+body>header>section {
+    background-color: rgba(185, 139, 12, 0.75);
+    width: 100vw;
+    padding: 1vw;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+body>header>section h1 {
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+body>header>section h2 {
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: x-large;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+body>header>section h3 {
+    text-transform: lowercase;
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: normal;
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+
+body>header>section img {
+
+    width: 15%;
+    height: 15%;
+    float: right;
+    margin-inline: 5%;
+    margin-block: 2%;
+}
+
+
