@@ -23,13 +23,16 @@
 		<td style="border-right: solid; margin: 25px; padding: 1%; vertical-align: top" rowspan="4">
 			<div title="Menu Bar" style>
 				<button id="infoDivButton" style="align-content: center; margin-left: 1vw; background-color: #1122ff; color: white;" onclick="infoDivClick()" type="button">ℹ️</button>
-				<button style="margin-left:1px; background-color: #009ff5; font-size: 12px; align-self: center" class="grid-refresh" onclick="regenerateMaze()" id="refreshButton" type="button">🔃</button>
+				<button style="margin-left:1vw; background-color: #009ff5; font-size: 24px; align-self: center" class="grid-refresh" onclick="regenerateMaze()" id="refreshButton" type="button">🔃</button>
 				<div style="background-color: #f0ff00; margin: 1px; padding: 4px; max-width: 7vw">
 					<input type="checkbox" id="goBackInput" style="content: 🔙; background-color: #f40f60;">
-					<label style="margin-left: 1px; font-size:24px" for="goBackInput">🔙</label>
+					<label style="margin-left: 1px; font-size:24px" for="goBackInput">Unlock 🔙 Travel</label>
 					</input>
 				</div>
 			</div>
+			<!-- implement element content through script to display a number representing current percentage of the maze the player has converted from path cells to wall cells 
+			or   display a numerical ticker or progressbar to represent the quantity of path cells that remain open, relative to the initial quantity the maze generated with
+			or   both a ticker for (path cells remaining) of (path cells at generation start) and a ticker for (total wall cells currently) of (total cells in the entire maze) -->
 			<label id="compercent"></label>
 			<span style="display: relative" id="infobuttontooltip" class="tooltip"></span>
 			<div id="infoDiv1" hidden style="padding-left: 2vmin">
