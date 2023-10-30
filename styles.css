@@ -9,8 +9,14 @@ body>header>h1 {
     margin: 0;
 }
 
+body[background]{
+    width: 100vmax;
+    height: max-content;
+}
+
 body{
     background-image: url(bricks.png);
+    background-size: 101vmax;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -39,7 +45,7 @@ body>header>nav ul li a:hover {
     font-size: large;
 }
 
-.togglec:checked {
+.togglec:checked + img {
     z-index: 99;
     visibility: hidden;
     display: none;
@@ -87,6 +93,15 @@ body>header>section img {
     float: right;
     margin-inline: 5%;
     margin-block: 2%;
+}
+
+#chtshta{
+    align-self: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100vmax;
+    height: auto;
+    float: left;
 }
 
 
