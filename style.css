@@ -1,0 +1,79 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(25, 100vw/25);
+	grid-template-rows: repeat(25, 100vh/25);
+	gap: 0px;
+}
+
+.grid-item {
+	width: auto;
+	height: auto;
+	border: 1px blink #119955; /* Border color, optional */
+}
+
+.start-cell {
+	background-color: #2ecc71; /* Green color for the start cell */
+}
+
+.end-cell {
+	background-color: #f39c12; /* Orange color for the end cell */
+}
+
+.wall {
+	background-color: #e74c3c; /* Red color for walls */
+}
+
+.maze-path {
+	background-color: #3498db; /* Blue color for maze path cells */
+}
+
+.pale-green {
+	background-color: #2eff71; /* Green color for the start cell */
+}
+
+table{
+	background-color:rgba(112, 99, 45, 0.5);
+	
+	border: 3px solid rgb(110, 75, 45);
+	max-zoom: calc( calc(100vw / 100vh) * 100 );
+	max-width: fit-content;
+	width: fit-content;
+	min-width: 95vw;
+}
+
+tr{
+	border: 3px solid sandybrown;
+}
+
+td {
+	box-sizing: border-box;
+	border: 3px solid burlywood;
+	align-content:flex-start;
+	text-align: left;
+	
+}
+
+#whoAmIth{
+	border-right: 0px none transparent;
+	border-left: 0px none transparent;
+	max-width: 100%;
+
+	align-content: center;
+}
+
+th{
+	border-top-right-radius: 5vw;
+	max-width: 25vmax;
+	min-width: 15vmax;
+	vertical-align: top;
+	align-content: start;
+	border-radius: 1%;
+	border: 3px solid sandybrown;
+}
+
+#aboutmePageBody {
+	background-image: url(bricks.png);
+	background-repeat: repeat;
+	background-size: 100vw 200vh;
+	background-position: bottom;
+}
