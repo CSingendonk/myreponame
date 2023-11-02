@@ -1,5 +1,5 @@
 // Make instructions more visible and the true function of the back checkbox and it's roll in the strategy.
-// fix the respawn location when maze regenerates larger. or fix the multi end cell / startcell stack bug.
+// fix the multi end cell / startcell stack bug.
 
 // Define the maze generation function
 var rowsIn = document.getElementById("heightIn");
@@ -400,6 +400,7 @@ function arrivedAtDestination(newX, newY) {
 
 		for (i = 0; i < mazecells.length; ++i) {
 			for (j = 0; j < mazecells[i].length; ++j) {
+				mazecells[2][2].classList.add("end-cell");
 				if (mazecells[2][2].classList.contains("start-cell")) {
 					mazecells[2][2].classList.remove("start-cell");
 					mazecells[2][2].classList.add("end-cell");
